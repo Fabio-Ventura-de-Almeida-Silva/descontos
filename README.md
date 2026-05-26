@@ -1,30 +1,65 @@
 # Simulador de Loja de Roupas AM Imports
 
-Este projeto é um simulador de loja de roupas desenvolvido em Python, utilizando Git e GitHub para organização em branches.
-
-## Objetivo
-
-Simular o funcionamento básico de uma loja de roupas chamada AM Imports, com catálogo de produtos, cadastro de clientes, carrinho de compras, controle de estoque, descontos, pagamento e relatórios.
+Projeto em Python para simular uma loja de roupas chamada AM Imports.
 
 ## Funcionalidades
 
 - Menu principal
-- Catálogo de roupas
+- Catálogo de produtos
+- Busca de produtos
 - Cadastro de clientes
 - Carrinho de compras
 - Controle de estoque
-- Sistema de descontos
-- Finalização de compra
-- Relatórios de vendas
-- Validações de entrada
+- Cupons e descontos automáticos
+- Pagamento e checkout
+- Recibo da compra
+- Relatório de vendas
+- Produtos com estoque baixo
+- Efeito de digitação no terminal
+- Limpeza de tela entre as opções do sistema
 
-## Tecnologias usadas
+## Arquivos do projeto
 
-- Python
-- Git
-- GitHub
+```text
+am-imports-simulador/
+├── main.py
+├── produtos.py
+├── clientes.py
+├── carrinho.py
+├── estoque.py
+├── descontos.py
+├── pagamento.py
+├── relatorios.py
+├── utils.py
+├── README.md
+└── .gitignore
+```
 
-## Organização das branches
+## Como executar
+
+No terminal, entre na pasta do projeto e rode:
+
+```bash
+python main.py
+```
+
+## Modo rápido
+
+Se quiser executar sem o efeito de digitação, use:
+
+Windows PowerShell:
+
+```bash
+$env:AM_FAST_MODE="1"; python main.py
+```
+
+Linux/macOS:
+
+```bash
+AM_FAST_MODE=1 python main.py
+```
+
+## Branches sugeridas para o grupo
 
 - feature/menu-principal
 - feature/catalogo-produtos
@@ -36,19 +71,6 @@ Simular o funcionamento básico de uma loja de roupas chamada AM Imports, com ca
 - feature/relatorios-vendas
 - feature/utils-validacoes
 
-## Integrantes
+## Organização do grupo
 
-1. Pessoa 1 - Menu principal
-2. Pessoa 2 - Catálogo de produtos
-3. Pessoa 3 - Cadastro de clientes
-4. Pessoa 4 - Carrinho de compras
-5. Pessoa 5 - Controle de estoque
-6. Pessoa 6 - Descontos e promoções
-7. Pessoa 7 - Pagamento e checkout
-8. Pessoa 8 - Relatórios de vendas
-9. Pessoa 9 - Utils e validações
-
-## Como executar
-
-```bash
-python main.py
+Cada integrante deve trabalhar na sua própria branch, fazer commit, enviar para o GitHub e abrir Pull Request para a branch main.
